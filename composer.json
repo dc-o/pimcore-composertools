@@ -1,0 +1,28 @@
+{
+  "name": "dc-o/pimcore-composertools",
+  "type": "pimcore-bundle",
+  "description": "Get infos from installed composer packages in pimcore",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Korbinian Ober",
+      "email": "korbinian@dc-o.de"
+    }
+  ],
+  "require": {
+    "pimcore/pimcore": ">=11.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DCO\\ComposerTools\\": "src/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "DCO\\ComposerTools\\ComposerToolsBundle"
+      ]
+    }
+  }
+}
